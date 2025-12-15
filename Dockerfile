@@ -1,5 +1,3 @@
-﻿FROM php:8.5-apache
-WORKDIR /var/www/html
-COPY . .
+FROM php:8.5-apache
+COPY . /var/www/html/
 EXPOSE 80
-CMD ["apache2-foreground"]
